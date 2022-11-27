@@ -9,16 +9,22 @@ Paper link: [[Arxiv]](https://arxiv.org/abs/2203.11509) [[CVPR]](https://openacc
 ![NLCL](img/Structure.png)
 
 ## Package dependencies
-The project is built with PyTorch 1.9.0, Python3.7, CUDA11.1. For package dependencies, you can install them by:
+The project is built with PyTorch 1.6.0, Python3.6. For package dependencies, you can install them by:
 ```bash
 pip install -r requirements.txt
 ```
 
 ## Pretrained model
-
+The pre-trained models of both Rain and Background Generator Network are provided in. 
 ## Training
+```train
+python train.py --dataroot DATASET_ROOT --model NLCL --name NAME --dataset_mode unaligned
+```
 
 ## Evaluation
+```test
+python test.py --dataroot DATASET_ROOT --model NLCL --name NAME --dataset_mode single --preprocess None
+```
 
 ## Citation
 If you find this project useful in your research, please consider citing:
