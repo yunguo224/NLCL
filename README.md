@@ -41,4 +41,4 @@ If you find this project useful in your research, please consider citing:
 ## Acknowledgement
 This code is inspired by [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
 ## Contact
-Please contact us if there is any question or suggestion(Yuntong Ye yuntongye@hust.edu.cn, Yi Chang yichang@hust.edu.cn, Yun Guo guoyun@hust.edu.cn).
+Please contact us if there is any question or suggestion(Yun Guo guoyun@hust.edu.cn, Yuntong Ye yuntongye@hust.edu.cn, Yi Chang yichang@hust.edu.cn).
