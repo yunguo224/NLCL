@@ -20,6 +20,7 @@ To train NLCL on real rain dataset, you can begin the training by:
 ```train
 python train.py --dataroot DATASET_ROOT --model NLCL --name NAME --dataset_mode unaligned
 ```
+The DATASET_ROOT example are provided in datasets/RealRain.
 ## Evaluation
 To evaluate NLCL, you can run:
 ```test
