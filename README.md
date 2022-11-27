@@ -13,22 +13,18 @@ The project is built with PyTorch 1.6.0, Python3.6. For package dependencies, yo
 ```bash
 pip install -r requirements.txt
 ```
-
 ## Pretrained model
-The pre-trained models of both Rain and Background Generator Network are provided in. 
+The pre-trained models of both Rain and Background Generator Network are provided in checkpoints/RealRain. 
 ## Training
 ```train
 python train.py --dataroot DATASET_ROOT --model NLCL --name NAME --dataset_mode unaligned
 ```
-
 ## Evaluation
 ```test
 python test.py --dataroot DATASET_ROOT --model NLCL --name NAME --dataset_mode single --preprocess None
 ```
-
 ## Citation
 If you find this project useful in your research, please consider citing:
-
 ```
 @InProceedings{Ye_2022_CVPR,
     author    = {Ye, Yuntong and Yu, Changfeng and Chang, Yi and Zhu, Lin and Zhao, Xi-Le and Yan, Luxin and Tian, Yonghong},
@@ -39,10 +35,7 @@ If you find this project useful in your research, please consider citing:
     pages     = {5821-5830}
 }
 ```
-
 ## Acknowledgement
-
-
-
+This code is inspired by [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
 ## Contact
-Please contact us if there is any question or suggestion().
+Please contact us if there is any question or suggestion(Yuntong Ye yuntongye@hust.edu.cn, Yi Chang yichang@hust.edu.cn, Yun Guo guoyun@hust.edu.cn).
