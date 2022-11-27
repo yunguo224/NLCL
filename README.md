@@ -16,10 +16,12 @@ pip install -r requirements.txt
 ## Pretrained model
 The pre-trained models of both Rain and Background Generator Network are provided in checkpoints/RealRain. 
 ## Training
+To train NLCL on real rain dataset, you can begin the training by:
 ```train
 python train.py --dataroot DATASET_ROOT --model NLCL --name NAME --dataset_mode unaligned
 ```
 ## Evaluation
+To evaluate NLCL, you can run:
 ```test
 python test.py --dataroot DATASET_ROOT --model NLCL --name NAME --dataset_mode single --preprocess None
 ```
