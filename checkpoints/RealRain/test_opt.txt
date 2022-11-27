@@ -1,0 +1,64 @@
+----------------- Options ---------------
+                 CUT_mode: CUT                           
+           adv_nce_layers: 0,3,7,11                      
+               batch_size: 1                             
+          checkpoints_dir: ./checkpoints                 
+                crop_size: 256                           
+                 dataroot: ./datasets/RealRain           	[default: placeholder]
+             dataset_mode: unaligned                     
+                direction: AtoB                          
+          display_winsize: 256                           
+               easy_label: experiment_name               
+                    epoch: latest                        
+                     eval: False                         
+        flip_equivariance: False                         
+           gen_nce_layers: 0,2,4,8,12                    
+                  gpu_ids: 3                             	[default: 0]
+                init_gain: 0.02                          
+                init_type: xavier                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+            lambda_DisNCE: 1.0                           
+               lambda_GAN: 1.0                           
+                lambda_L1: 0.1                           
+               lambda_MSE: 1.0                           
+               lambda_NCE: 1.0                           
+                load_name: None                          
+                load_size: 256                           
+         max_dataset_size: inf                           
+                    model: NLCL                          	[default: DualExtractor_model]
+               n_layers_D: 3                             
+                     name: RealRain                      	[default: experiment_name]
+                    nce_T: 0.07                          
+                  nce_idt: True                          
+nce_includes_all_negatives_from_minibatch: False                         
+                      ndf: 64                            
+                     netD: basic                         
+              netFAdvBack: non_localOne                  
+              netFAdvRain: non_localOne                  
+                  netFGen: non_localOne                  
+                  netF_nc: 256                           
+                     netG: resnet_9blocks                
+                      ngf: 64                            
+             no_antialias: False                         
+          no_antialias_up: False                         
+               no_dropout: True                          
+                  no_flip: False                         
+                    normD: instance                      
+                    normG: instance                      
+              num_patches: 256                           
+          num_patches_neg: 128                           
+          num_patches_pos: 8                             
+                 num_test: 6000                          
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+                pool_size: 0                             
+               preprocess: None                          	[default: crop]
+         random_scale_max: 3.0                           
+              results_dir: ./results/                    
+           serial_batches: False                         
+stylegan2_G_num_downsampling: 1                             
+                   suffix:                               
+                  verbose: False                         
+----------------- End -------------------
