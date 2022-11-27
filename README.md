@@ -14,7 +14,7 @@ The project is built with PyTorch 1.6.0, Python3.6. For package dependencies, yo
 pip install -r requirements.txt
 ```
 ## Pretrained model
-The pre-trained models of both Rain and Background Generator Network are provided in checkpoints/RealRain. 
+The pre-trained models of both Rain and Background Generator Networks are provided in checkpoints/RealRain. 
 ## Training
 To train NLCL on real rain dataset, you can begin the training by:
 ```train
