@@ -24,6 +24,9 @@ class NLCLModel(BaseModel):
 
         parser.add_argument('--nce_idt', type=util.str2bool, nargs='?', const=True, default=False,
                             help='use NCE loss for identity mapping: NCE(G(Y), Y))')
+        parser.add_argument('--nce_includes_all_negatives_from_minibatch',
+                            type=util.str2bool, nargs='?', const=True, default=False,
+                            help='(used for single image translation) If True, include the negatives from the other samples of the minibatch when computing the contrastive loss. Please see models/patchnce.py for more details.')
         parser.add_argument('--adv_nce_layers', type=str, default='0,3,7,11', help='compute NCE loss on which layers')
         parser.add_argument('--gen_nce_layers', type=str, default='0,2,4,8,12', help='compute NCE loss on which layers')
         parser.add_argument('--netFGen', type=str, default='non_localOne',
